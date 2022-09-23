@@ -11,12 +11,6 @@
       <![CDATA[ --- Logged In Sucessfully --- ]]>
     </line>
     <line>
-      <![CDATA[Org-created - test pass]]>
-    </line>
-    <line>
-      <![CDATA[Contact created-pass]]>
-    </line>
-    <line>
       <![CDATA[ --- Logged Out Succesfully --- ]]>
     </line>
     <line>
@@ -26,64 +20,61 @@
       <![CDATA[ --- Database Connection Closed Succesfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-09-21T18:40:09 IST" name="Default suite" finished-at="2022-09-21T18:40:34 IST" duration-ms="25259">
+  <suite started-at="2022-09-23T13:39:49 IST" name="Suite" finished-at="2022-09-23T13:40:19 IST" duration-ms="30566">
     <groups>
+      <group name="SmokeSuite">
+        <method signature="BCOrgPomTest.Orgpom()[pri:0, instance:Vtiger.OrganizationTests.BCOrgPomTest@1ed6388a]" name="Orgpom" class="Vtiger.OrganizationTests.BCOrgPomTest"/>
+      </group> <!-- SmokeSuite -->
     </groups>
-    <test started-at="2022-09-21T18:40:09 IST" name="Default test" finished-at="2022-09-21T18:40:34 IST" duration-ms="25259">
-      <class name="Vtiger.ContactsTests.CreatecnwithOrgTest">
-        <test-method is-config="true" signature="bsConfig()[pri:0, instance:Vtiger.ContactsTests.CreatecnwithOrgTest@5ba3f27a]" started-at="2022-09-21T18:40:09 IST" name="bsConfig" finished-at="2022-09-21T18:40:09 IST" duration-ms="6" status="PASS">
+    <test started-at="2022-09-23T13:39:49 IST" name="Test" finished-at="2022-09-23T13:40:19 IST" duration-ms="30566">
+      <class name="Vtiger.OrganizationTests.BCOrgPomTest">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:Vtiger.OrganizationTests.BCOrgPomTest@1ed6388a]" started-at="2022-09-23T13:39:49 IST" name="bsConfig" finished-at="2022-09-23T13:39:49 IST" duration-ms="6" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[ ---- DB Connection Successfull ---- ]]>
             </line>
           </reporter-output>
         </test-method> <!-- bsConfig -->
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Vtiger.ContactsTests.CreatecnwithOrgTest@5ba3f27a]" started-at="2022-09-21T18:40:09 IST" name="bcConfig" finished-at="2022-09-21T18:40:11 IST" duration-ms="2267" status="PASS">
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Vtiger.OrganizationTests.BCOrgPomTest@1ed6388a]" started-at="2022-09-23T13:39:49 IST" name="bcConfig" finished-at="2022-09-23T13:39:53 IST" duration-ms="4131" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[chrome--- Browser Launched ---- ]]>
             </line>
           </reporter-output>
         </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Vtiger.ContactsTests.CreatecnwithOrgTest@5ba3f27a]" started-at="2022-09-21T18:40:11 IST" name="bmConfig" finished-at="2022-09-21T18:40:14 IST" duration-ms="2460" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Vtiger.OrganizationTests.BCOrgPomTest@1ed6388a]" started-at="2022-09-23T13:39:53 IST" name="bmConfig" finished-at="2022-09-23T13:39:58 IST" duration-ms="5068" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[ --- Logged In Sucessfully --- ]]>
             </line>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="createcontactwithorg()[pri:0, instance:Vtiger.ContactsTests.CreatecnwithOrgTest@5ba3f27a]" started-at="2022-09-21T18:40:14 IST" name="createcontactwithorg" finished-at="2022-09-21T18:40:32 IST" duration-ms="18813" status="PASS">
+        <test-method signature="Orgpom()[pri:0, instance:Vtiger.OrganizationTests.BCOrgPomTest@1ed6388a]" started-at="2022-09-23T13:39:58 IST" name="Orgpom" finished-at="2022-09-23T13:40:17 IST" duration-ms="19332" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[Org-created - test pass]]>
-            </line>
-            <line>
-              <![CDATA[Contact created-pass]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- createcontactwithorg -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:Vtiger.ContactsTests.CreatecnwithOrgTest@5ba3f27a]" started-at="2022-09-21T18:40:32 IST" name="amConfig" finished-at="2022-09-21T18:40:34 IST" duration-ms="1596" status="PASS">
+        </test-method> <!-- Orgpom -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:Vtiger.OrganizationTests.BCOrgPomTest@1ed6388a]" started-at="2022-09-23T13:40:17 IST" name="amConfig" finished-at="2022-09-23T13:40:19 IST" duration-ms="1932" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[ --- Logged Out Succesfully --- ]]>
             </line>
           </reporter-output>
         </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:Vtiger.ContactsTests.CreatecnwithOrgTest@5ba3f27a]" started-at="2022-09-21T18:40:34 IST" name="acConfig" finished-at="2022-09-21T18:40:34 IST" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:Vtiger.OrganizationTests.BCOrgPomTest@1ed6388a]" started-at="2022-09-23T13:40:19 IST" name="acConfig" finished-at="2022-09-23T13:40:19 IST" duration-ms="71" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[ --- Browser closed Sucessfully --- ]]>
             </line>
           </reporter-output>
         </test-method> <!-- acConfig -->
-        <test-method is-config="true" signature="asConfig()[pri:0, instance:Vtiger.ContactsTests.CreatecnwithOrgTest@5ba3f27a]" started-at="2022-09-21T18:40:34 IST" name="asConfig" finished-at="2022-09-21T18:40:34 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="asConfig()[pri:0, instance:Vtiger.OrganizationTests.BCOrgPomTest@1ed6388a]" started-at="2022-09-23T13:40:20 IST" name="asConfig" finished-at="2022-09-23T13:40:20 IST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[ --- Database Connection Closed Succesfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- asConfig -->
-      </class> <!-- Vtiger.ContactsTests.CreatecnwithOrgTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- Vtiger.OrganizationTests.BCOrgPomTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
