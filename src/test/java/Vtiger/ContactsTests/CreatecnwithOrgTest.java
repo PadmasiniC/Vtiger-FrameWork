@@ -23,7 +23,7 @@ import Vtiger.ObjectRepository.OrganizationModulePage;
 public class CreatecnwithOrgTest extends BaseClass {
 	
 	
-	@Test
+	@Test (groups="Regression-Suite")
 	public void createcontactwithorg() throws InterruptedException
 	{
 //Navigate to Organizations link
