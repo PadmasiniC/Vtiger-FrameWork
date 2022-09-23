@@ -80,7 +80,7 @@ public class CreateContactTest {
 		 
 //step- 8 - logout
 		 WebElement element=driver.findElement(By.xpath("//img[@src='themes/softed/images/user.PNG']"));
-		 wUtil.waitForElementsTobeVisible(driver, element);
+		 wUtil.waitForElementTOBeVisible(driver, element);
 		 wUtil.mouseHover(driver, element);
 		 driver.findElement(By.linkText("Sign Out")).click();
 		 System.out.println("Saved the Contact and Logged out successfully");

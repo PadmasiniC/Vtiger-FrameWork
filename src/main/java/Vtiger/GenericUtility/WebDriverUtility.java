@@ -5,6 +5,7 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -44,19 +45,48 @@ public void waitForDOMLoad(WebDriver driver)
  * This method will wait for the element to be visible
  * @param driver, element
  */
-public void waitForElementsTobeVisible(WebDriver driver, WebElement element)
+/**
+ * This method will wait for an Element to be Visible
+ * @param driver
+ * @param element
+ */
+public void waitForElementTOBeVisible(WebDriver driver , WebElement element)
 {
-WebDriverWait wait=new WebDriverWait(driver,10);
-wait.until(ExpectedConditions.visibilityOf(element));
+	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+	wait.until(ExpectedConditions.visibilityOf(element));
 }
 
-/*
- * This method will wait for an element to be clickable
+/**
+ * This Method will wait for the Element to be Clickable
+ * @param driver
+ * @param element
  */
-public void waitForElementTobeClickable(WebDriver driver, WebElement element)
+public void waitForElementToBeClickable(WebDriver driver , WebElement element) 
 {
-	WebDriverWait wait = new WebDriverWait(driver, 10);
+	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 	wait.until(ExpectedConditions.elementToBeClickable(element));
+}
+
+/**
+ * This Methos is a Custom Wait where it wait for particular Element.
+ * @param element
+ * @throws Throwable
+ */
+public void waitAndClickOnElement(WebElement element) throws Throwable
+{
+	int count=0;
+	while(count<10)
+	{
+		try
+		{
+			element.click();
+		}
+		catch (Exception e) {
+			// TODO: handle exception
+			Thread.sleep(1000);
+			count++;
+		}
+	}
 }
 
 /*
