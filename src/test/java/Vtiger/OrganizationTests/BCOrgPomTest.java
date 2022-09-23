@@ -13,7 +13,7 @@ import Vtiger.ObjectRepository.OrganizationInfoVerifyPage;
 import Vtiger.ObjectRepository.OrganizationModulePage;
 
 public class BCOrgPomTest extends BaseClass  {
-	@Test
+	@Test (groups="SmokeSuite")
 	
 	public void Orgpom()
 	{
