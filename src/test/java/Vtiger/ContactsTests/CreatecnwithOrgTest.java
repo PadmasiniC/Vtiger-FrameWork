@@ -1,7 +1,5 @@
 package Vtiger.ContactsTests;
 
-import static org.testng.Assert.assertEquals;
-
 import java.io.IOException;
 
 import org.openqa.selenium.By;
@@ -9,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import Vtiger.GenericUtility.BaseClass;
@@ -19,6 +18,8 @@ import Vtiger.ObjectRepository.CreateNewOrgPage;
 import Vtiger.ObjectRepository.HomePage;
 import Vtiger.ObjectRepository.OrganizationInfoVerifyPage;
 import Vtiger.ObjectRepository.OrganizationModulePage;
+
+@Listeners(Vtiger.GenericUtility.ListenerImplementation.class)
 
 public class CreatecnwithOrgTest extends BaseClass {
 	
